@@ -3,6 +3,7 @@ class ProductManager{
 
     constructor(){
         this.productos = []; //"Base de datos"
+        
     }
 
     getProductos = () => {
@@ -10,7 +11,7 @@ class ProductManager{
     }
 
 
-    getProducto = (idProducto) => {
+    getProductById = (idProducto) => {
         const producto = this.productos.find( producto => producto.id == idProducto);
         if(producto){
             return producto;
@@ -36,8 +37,8 @@ class ProductManager{
             descripcion,
             precio,
             // imagen,
-            code,
             stock: stockDisponible,
+            code,
             id: this.productos.length +1 
         }
 
