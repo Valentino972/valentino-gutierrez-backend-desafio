@@ -1,5 +1,5 @@
 //1. Clase Product Manager
-class ProductManager{
+export class ProductManager{
 
     constructor(){
         this.productos = []; //"Base de datos"

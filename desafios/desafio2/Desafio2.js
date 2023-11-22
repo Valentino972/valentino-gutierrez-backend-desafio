@@ -87,11 +87,14 @@ const administradorDeProductos = new ProductManager();
 
 //ejemplo agregar producto
 administradorDeProductos.addProduct('Producto 1', 'Descripcion 1', 20, 'ABC1',100);
+administradorDeProductos.addProduct('Producto 2', 'Descripcion 2', 20, 'ABC2',100);
+administradorDeProductos.addProduct('Producto 3', 'Descripcion 3', 20, 'ABC3',100);
+administradorDeProductos.addProduct('Producto 4', 'Descripcion 4', 20, 'ABC4',100);
 
 //ejemplo eliminar producto
-const resultadoEliminar = await administradorDeProductos.deleteProduct(1);
-console.log(resultadoEliminar);
+// const resultadoEliminar = await administradorDeProductos.deleteProduct(1);
+// console.log(resultadoEliminar);
 
 //ejemplo obtener todos los productos
-const todosLosProductos = await administradorDeProductos.getProducts();
-console.log(todosLosProductos);
+// const todosLosProductos = await administradorDeProductos.getProducts();
+// console.log(todosLosProductos);
