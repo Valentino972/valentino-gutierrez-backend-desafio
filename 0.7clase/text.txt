@@ -1,0 +1,42 @@
+EXPRESS AVANZADO
+
+
+*¿Que es un codigo de estado?
+Cuando realizamos alguna peticion al servidor mediante el protocolo http, el servidor debe respondernos no solo con info, sino con un estado del proceso.
+Este es un codigo que nos permitirá saber como se encuentra el proceso, o como finalizó.
+
+*
+1xx informational
+-2xx succes 
+Indica que la peticion se procesó correctamente. No hubo ningun tipo de inconveniente desde la consulta hasta la respuesta.
+-3xx redirection
+Hacer referencia a redirecciones, cuando un recurso se ha movido o necesitamos apuntar a otro servicio.
+-4xx client error
+Se utiliza cuando el cliente realiza alguna peticion que no cumpla con las reglas de la comunicacion(faltó enviar un dato, o formato incorrecto)
+-5xx server error
+
+
+*¿Que es una API?
+-API(Application Programming Interface)
+Es un conjunto de definiciones y reglas que permiten que dos equipos puedan integrarse para trabajar juntos. La mejor analogia que hay para comprender ésto es que una API funge como un "contrato" entre el front y el back.
+ 
+
+ *REST (REpresentational State Transfer)
+Permite definir la estructura que deben tener los datos para poder transefirse, cuando hacemos una peticion.
+REST define como debe ser el cuerpo del mensaje a transmitir.
+-Los dos formatos mas importanes son JSON y XML.
+Nosotros utilizaremos JSON.
+
+*API REST
+Es un modelo completo para tener perfectamente estipulados los protocolos, las reglas, e incluso la estructura de la info, con el fin de poder hacer un sistema de comunicacion completo entre las computadoras.
+
+*METODOS DE PETICION 
+
+POST => Sirve para "crear" recursos, POST se utiliza para operaciones donde no necesitamos obtener un recurso, sino añadir uno. Algunos de los casos donde se utiliza son:
+*Registrar un usuario.
+*Loguear un  usuario.
+*Crear un producto
+*Crear un carrito de compras.
+*Enviar info para un correo electronico.
+
+se apoya del recurso "req.body", donde el body se representa la info q el cliente envia para crear.

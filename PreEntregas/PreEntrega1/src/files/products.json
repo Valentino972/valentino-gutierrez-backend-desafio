@@ -1,0 +1,22 @@
+[
+	{
+		"title": "azucar",
+		"quantity": "20",
+		"description": "carbohidrato",
+		"code": "abc123",
+		"price": "$200",
+		"stock": "20",
+		"category": "productos basicos",
+		"id": 1
+	},
+	{
+		"title": "yerba",
+		"quantity": "18",
+		"description": "carbohidrato",
+		"code": "dfg456",
+		"price": "$150",
+		"stock": "30",
+		"category": "mate",
+		"id": 2
+	}
+]
